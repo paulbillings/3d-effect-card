@@ -12,6 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  perspective: 1000px;
 }
 
 .container {
@@ -23,6 +24,7 @@ body {
 }
 
 .card {
+  transform-style: preserve-3d;
   min-height: 80vh;
   width: 35rem;
   background: black;
@@ -42,6 +44,7 @@ body {
 .lion img {
   width: 20rem;
   z-index: 2;
+  transition: all 0.75s ease-out;
 }
 
 .circle {
@@ -55,4 +58,36 @@ body {
   position: absolute;
   border-radius: 50%;
   z-index: 1;
+}
+
+.info h1 {
+  font-size: 3rem;
+  line-height: 90%;
+  transition: all 0.75s ease-out;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  padding: 1rem 0rem;
+  line-height: 98%;
+  color: #585858;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.visitSite {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.visitSite button {
+  font-size: 1.3rem;
+  width: 100%;
+  padding: 1rem 0rem;
+  background: #f54642;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.75s ease-out;
 }
